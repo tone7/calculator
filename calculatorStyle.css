@@ -1,0 +1,237 @@
+
+@font-face {
+    font-family: 'Digital';
+    src: url(fonts/digital-7-font/Digital7-1e1Z.ttf);
+}  
+
+@font-face {
+    font-family: 'EscapeArtist';
+    src: url(fonts/escape-artist-font/EscapeArtist-0WvKz.otf);
+}  
+
+.container{
+
+}
+
+#header{
+    text-align: center;
+}
+
+#calculator{
+    border-radius: 20px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    height: 500px;
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+    background-color: rgb(214, 214, 214);
+    box-shadow: 10px 15px 10px rgb(16, 66, 50);
+}
+
+/* #calculator:hover{
+    transition: 0.5s;
+    box-shadow: 10px 15px rgb(16, 66, 50);
+} */
+
+#inner{
+    display: grid;
+    height: 470px;
+    width: 290px;
+    margin: auto;
+}
+
+#screen{
+    height: 90px;
+    width: 288px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #a3b570;
+    position: relative;
+    box-shadow: inset 5px 5px 2px;
+}
+
+#text{
+    font-family: Digital;
+    font-size: 50px;
+    margin: auto;
+    margin-right: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 30px;
+    font-size: 30px;
+
+    /* grid-template-columns: 2fr 2fr 1fr; */
+    /* grid-template-areas: 
+        "clear delete divide"
+        "seven eigth nine multiply"
+        "four five six subtract"
+        "one two three add"
+        "sign zero period equal"
+    ; */
+}
+
+.button-item{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 60px;
+    height: 60px;
+    width: 69.5px;
+    margin: 0.5px;
+    font-family: EscapeArtist;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.2s;
+    background-color: rgb(168, 168, 168);
+    box-shadow: 5px 5px 2px;
+    cursor: pointer;
+}
+
+.button-item:hover{
+    transition: 0.2s;
+    font-size: 35px;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+
+#clear{
+    background-color: rgb(247, 89, 89);
+}
+
+#equal{
+    background-color: rgb(89, 196, 89)
+}
+
+#clear, #delete{
+    width: 105.75px;
+}
+
+/* #clear{
+    grid-area: clear;
+}
+
+#delete{
+    grid-area: delete;
+}
+
+#divide{
+    grid-area: divide;
+}
+
+#seven{
+    grid-area: seven;
+}
+
+#eight{
+    grid-area: eight;
+}
+
+#nine{
+    grid-area: nine;
+}
+
+#multiply{
+    grid-area: multiply;
+}
+
+#four{
+    grid-area: four;
+}
+
+#five{
+    grid-area: five;
+}
+
+#six{
+    grid-area: six;
+}
+
+#subtract{
+    grid-area: subtract;
+}
+
+#one{
+    grid-area: one;
+}
+
+#two{
+    grid-area: two;
+}
+
+#three{
+    grid-area: three;
+}
+
+#add{
+    grid-area: add;
+}
+
+#sign{
+    grid-area: sign;
+}
+
+#zero{
+    grid-area: zero;
+}
+
+#period{
+    grid-area: period;
+}
+
+#equal{
+    grid-area: equal;
+} */
+
+/* .cancelButtons{
+    display: grid;
+    grid-template-columns: 17.5vh 17.5vh 10vh;
+    grid-template-rows: auto;
+    height: 10vh;
+    margin-top: 2vh;
+    font-family: EscapeArtist;
+    position: relative;
+} */
+
+/* .cancel-item{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5px;
+}
+
+.numPad{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "seven eigth nine multiply"
+        "four five six subtract"
+        "one two three add"
+        ". zero . equal"
+    ;
+    font-family: EscapeArtist;
+        position: relative;
+}
+
+.number-item{
+    height: 10vh;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0.5px;
+}
+
+#zero{
+    grid-area: zero;
+} */
+
+
